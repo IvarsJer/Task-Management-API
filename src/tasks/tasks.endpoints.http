@@ -1,0 +1,25 @@
+### Fetch all tasks
+
+GET http://localhost:3200/tasks
+Content-Type: application/json
+
+### Create a new task
+POST http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "title": "Molor sit amet",
+    "date": "2023-08-26T13:03:00Z",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    "priority": "normal",
+    "status": "todo",
+}
+
+### Update a task
+PUT http://localhost:3200/tasks
+Content-Type: application/json
+
+{
+    "id": "1255562",
+    "status": "completed",
+}
